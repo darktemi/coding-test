@@ -1,10 +1,19 @@
 package programmers;
 
 class Main1_16 {
-  public int[] solution(int n) {
-    int[] answer = {};
+  public static void main(String[] args) {
+    System.out.println();
+  }
+  class Solution {
+    public static int[] solution(int n) {
+      int[] answer = new int[(n + 1) / 2];
 
-
-    return answer;
+      for(int i = 1; i <= n; i++) {
+        if (i % 2 == 1) {
+          answer[i / 2] = i;
+        }
+      }
+      return answer;
+    }
   }
 }
