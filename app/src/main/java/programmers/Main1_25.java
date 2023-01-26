@@ -6,12 +6,18 @@ class Main1_25 {
     System.out.println();
   }
 
-  public int solution(int slice, int n) {
+  public int solution(int price) {
     int answer = 0;
-    // 나머지가 남으면 return 값을 + 1
 
-
-
+    if (price < 100000) {
+      answer = price;
+    } else if (price < 300000) {
+      answer = (int)(price * 0.95);
+    } else if (price < 500000) {
+      answer = (int)(price * 0.9);
+    } else {
+      answer = (int)(price * 0.8);
+    }
     return answer;
   }
 }
