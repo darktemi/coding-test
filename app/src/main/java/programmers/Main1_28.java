@@ -1,18 +1,23 @@
 package programmers;
 
-import java.util.Arrays;
+import java.util.Scanner;
 
 class Main1_28 {
 
-  public static void main(String[] args) {
-    System.out.println();
-  }
+  public static void main(String[] args) {}
 
-  public int[] solution(int[] numbers, int num1, int num2) {
-    int[] answer = new int[numbers.length];
+  public class Solution {
+    public static void main(String[] args) {
+      Scanner sc = new Scanner(System.in);
+      int n = sc.nextInt();
+      int i = 1;
+      String star = "*";
 
-    Arrays.spliterator(numbers, num1, num2);
+      while (i < n) {
+        System.out.println(star);
+      }
 
-    return answer;
+      System.out.println(n);
+    }
   }
 }
